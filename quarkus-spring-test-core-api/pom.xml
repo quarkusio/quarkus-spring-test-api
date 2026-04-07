@@ -4,18 +4,18 @@
 
     <parent>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-spring-boot-test-api</artifactId>
+        <artifactId>quarkus-spring-test-api</artifactId>
         <version>3.5.Alpha1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
 
     <groupId>io.quarkus</groupId>
-    <artifactId>quarkus-spring-boot-test-core-api</artifactId>
-    <version>3.5.Alpha1-SNAPSHOT</version>
+    <artifactId>quarkus-spring-test-core-api</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
         </dependency>
     </dependencies>
 
@@ -35,15 +35,14 @@
                             <createSourcesJar>true</createSourcesJar>
                             <artifactSet>
                                 <includes>
-                                    <include>org.springframework.boot:spring-boot-test</include>
+                                    <include>org.springframework:spring-test</include>
                                 </includes>
                             </artifactSet>
                             <filters>
                                 <filter>
-                                    <artifact>org.springframework.boot:spring-boot-test</artifact>
+                                    <artifact>org.springframework:spring-test</artifact>
                                     <includes>
-                                        <!-- Used in Quarkus -->
-                                        <include>org/springframework/boot/test/context/SpringBootTest**</include>
+                                        <include>org/springframework/test/context/junit/jupiter/SpringExtension**</include>
                                     </includes>
                                 </filter>
                             </filters>

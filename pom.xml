@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.quarkus</groupId>
-    <artifactId>quarkus-spring-boot-test-api</artifactId>
+    <artifactId>quarkus-spring-test-api</artifactId>
     <version>3.5.Alpha1-SNAPSHOT</version>
 
-    <name>Spring Boot dependencies for Quarkus</name>
+    <name>Spring Test dependencies for Quarkus</name>
     <description>The minimum dependencies to reduce the footprint of Quarkus applications using the Spring Boot features</description>
     <url>https://quarkus.io/</url>
     <developers>
@@ -43,12 +43,14 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <spring-boot-test.version>3.5.7</spring-boot-test.version>
+        <spring-test.version>6.2.12</spring-test.version>
+        <quarkus-junit.version>3.32.3</quarkus-junit.version>
     </properties>
 
     <packaging>pom</packaging>
     <modules>
-        <module>quarkus-spring-boot-test-core-api</module>
-<!--        <module>quarkus-spring-boot-properties-api</module>-->
+        <module>quarkus-spring-boot-test-api</module>
+        <module>quarkus-spring-test-core-api</module>
     </modules>
 
 
@@ -58,6 +60,16 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-test</artifactId>
                 <version>${spring-boot-test.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring-test.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-junit</artifactId>
+                <version>${quarkus-junit.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
