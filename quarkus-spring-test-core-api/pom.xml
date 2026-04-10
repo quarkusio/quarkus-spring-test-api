@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-test-api</artifactId>
-        <version>3.5.Alpha0</version>
+        <version>3.5.Alpha1-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
