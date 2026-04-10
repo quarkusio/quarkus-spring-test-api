@@ -28,8 +28,8 @@
 
     <scm>
         <url>https://github.com/quarkusio/quarkus-spring-test-api</url>
-        <connection>scm:git:git@github.com:quarkusio/quarkus-spring-test-api.git</connection>
-        <developerConnection>scm:git:git@github.com:quarkusio/quarkus-spring-test-api.git</developerConnection>
+        <connection>scm:git:https://github.com/quarkusio/quarkus-spring-test-api.git</connection>
+        <developerConnection>scm:git:https://github.com/quarkusio/quarkus-spring-test-api.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
