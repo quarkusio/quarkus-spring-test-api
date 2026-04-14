@@ -11,6 +11,7 @@
 
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-spring-boot-test-api</artifactId>
+    <name>Quarkus Spring Boot Test API</name>
 
     <dependencies>
         <dependency>
