@@ -4,7 +4,7 @@
 
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-spring-test-api</artifactId>
-    <version>3.5.Alpha2-SNAPSHOT</version>
+    <version>4.1-SNAPSHOT</version>
 
     <name>Spring Test dependencies for Quarkus</name>
     <description>The minimum dependencies to reduce the footprint of Quarkus applications using the Spring Boot features</description>
@@ -41,7 +41,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <spring-boot-test.version>4.1.0</spring-boot-test.version>
-        <spring-test.version>6.2.12</spring-test.version>
+        <spring-test.version>7.0.8</spring-test.version>
         <quarkus-junit.version>3.36.0</quarkus-junit.version>
     </properties>
 
